@@ -3,7 +3,6 @@
 Streaming data does not have to be simple text.
 Many of us are familiar with streaming video content and audio (e.g. music) files. 
 
-Streaming data can be structured (e.g. csv files) or
 semi-structured (e.g. json data). 
 
 We'll work with two different types of data, and so we'll use two different Kafka topic names. 
