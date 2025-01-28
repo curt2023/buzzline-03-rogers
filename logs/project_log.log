@@ -3825,3 +3825,481 @@
 2025-01-25 13:04:54.946 | WARNING  | __main__:main:170 - Producer interrupted by user.
 2025-01-25 13:04:54.949 | INFO     | __main__:main:175 - Kafka producer closed.
 2025-01-25 13:04:54.952 | INFO     | __main__:main:177 - END producer.
+2025-01-28 16:11:29.371 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-28 16:11:29.404 | INFO     | __main__:<module>:68 - Project root: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers
+2025-01-28 16:11:29.405 | INFO     | __main__:<module>:72 - Data folder: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data
+2025-01-28 16:11:29.405 | INFO     | __main__:<module>:76 - Data file: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:11:29.406 | INFO     | __main__:main:137 - START producer.
+2025-01-28 16:11:29.406 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-28 16:11:29.426 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-28 16:11:29.428 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-28 16:11:29.779 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'VuD9peiTSF-0sv1m4KYl_A', 'controller_id': 1001}
+2025-01-28 16:11:29.781 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-01-28 16:11:29.786 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-01-28 16:11:29.786 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-28 16:11:29.787 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-28 16:11:29.899 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-28 16:11:29.900 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-28 16:11:30.231 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'buzzline_json'.
+2025-01-28 16:11:30.681 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'buzzline_json' created successfully.
+2025-01-28 16:11:30.683 | INFO     | __main__:main:160 - Kafka topic 'buzzline_json' is ready.
+2025-01-28 16:11:30.684 | INFO     | __main__:main:166 - Starting message production to topic 'buzzline_json'...
+2025-01-28 16:11:30.685 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:11:30.704 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:11:30.777 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:11:31.782 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are amazing!!', 'author': 'Alice'}
+2025-01-28 16:11:32.785 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Charlie'}
+2025-01-28 16:11:33.790 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Alice'}
+2025-01-28 16:11:34.801 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:11:35.803 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are fat which is great.', 'author': 'Alice'}
+2025-01-28 16:11:36.807 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:11:37.812 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:11:38.815 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs sometimes eat their poop, easy clean up.', 'author': 'Eve'}
+2025-01-28 16:11:39.820 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:11:40.822 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:11:41.827 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:11:42.831 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:11:43.835 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:11:44.844 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:11:45.849 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:11:46.853 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:11:47.857 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:11:48.862 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:11:49.865 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Diana'}
+2025-01-28 16:11:50.868 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Eve'}
+2025-01-28 16:11:51.871 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Charlie'}
+2025-01-28 16:11:52.877 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Bob'}
+2025-01-28 16:11:53.907 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Alice'}
+2025-01-28 16:11:54.911 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:11:55.914 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Diana'}
+2025-01-28 16:11:56.918 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:11:57.922 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:11:58.927 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:11:59.937 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:00.942 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:12:01.945 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:02.948 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:03.953 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:04.955 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:05.960 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:06.964 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:12:07.981 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:12:08.985 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:09.990 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:12:10.994 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:12:11.998 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:12:13.001 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:14.005 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Diana'}
+2025-01-28 16:12:15.009 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:12:16.016 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:17.031 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:18.035 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:19.039 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:20.051 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Eve'}
+2025-01-28 16:12:21.057 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Bob'}
+2025-01-28 16:12:22.061 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Alice'}
+2025-01-28 16:12:23.066 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:24.068 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:12:24.070 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:12:24.073 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:25.076 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are amazing!!', 'author': 'Alice'}
+2025-01-28 16:12:26.080 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Charlie'}
+2025-01-28 16:12:27.083 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Alice'}
+2025-01-28 16:12:28.088 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:12:29.094 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are fat which is great.', 'author': 'Alice'}
+2025-01-28 16:12:30.098 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:31.104 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:12:32.117 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs sometimes eat their poop, easy clean up.', 'author': 'Eve'}
+2025-01-28 16:12:33.120 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:34.124 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:35.128 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:36.131 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:12:37.135 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:38.140 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:12:39.163 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:12:40.169 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:41.174 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:42.180 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:43.184 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Diana'}
+2025-01-28 16:12:44.189 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Eve'}
+2025-01-28 16:12:45.198 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Charlie'}
+2025-01-28 16:12:46.202 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Bob'}
+2025-01-28 16:12:47.207 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Alice'}
+2025-01-28 16:12:48.212 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:49.216 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Diana'}
+2025-01-28 16:12:50.220 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:51.225 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:52.228 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:53.231 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:54.250 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:12:55.253 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:56.257 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:56.368 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-28 16:12:56.376 | INFO     | __main__:main:124 - START consumer.
+2025-01-28 16:12:56.376 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: buzzline_json
+2025-01-28 16:12:56.377 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: buzz_group
+2025-01-28 16:12:56.379 | INFO     | __main__:main:129 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-01-28 16:12:56.380 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-28 16:12:56.381 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-01-28 16:12:56.528 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-01-28 16:12:56.528 | INFO     | __main__:main:135 - Polling messages from topic 'buzzline_json'...
+2025-01-28 16:12:57.262 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.097 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:58.098 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.099 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1}
+2025-01-28 16:12:58.102 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are amazing!!', 'author': 'Alice'}
+2025-01-28 16:12:58.103 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.104 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 1}
+2025-01-28 16:12:58.107 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Charlie'}
+2025-01-28 16:12:58.107 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.108 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 1, 'Charlie': 1}
+2025-01-28 16:12:58.111 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Alice'}
+2025-01-28 16:12:58.112 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.112 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1}
+2025-01-28 16:12:58.114 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:12:58.115 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.117 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1, 'Diana': 1}
+2025-01-28 16:12:58.121 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are fat which is great.', 'author': 'Alice'}
+2025-01-28 16:12:58.123 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.124 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 1}
+2025-01-28 16:12:58.127 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.128 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.128 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-28 16:12:58.129 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:12:58.129 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.131 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 2, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-28 16:12:58.133 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs sometimes eat their poop, easy clean up.', 'author': 'Eve'}
+2025-01-28 16:12:58.134 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.135 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-01-28 16:12:58.137 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:58.138 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.139 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 2}
+2025-01-28 16:12:58.143 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.144 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.145 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 3}
+2025-01-28 16:12:58.146 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:58.146 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.147 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 1, 'Diana': 4}
+2025-01-28 16:12:58.148 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:12:58.148 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.149 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4}
+2025-01-28 16:12:58.152 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:58.152 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.153 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 1}
+2025-01-28 16:12:58.157 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:12:58.158 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.160 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 3, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-28 16:12:58.163 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:12:58.163 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.164 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 4, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-28 16:12:58.167 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:58.168 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.168 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-28 16:12:58.172 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:58.174 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.176 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 5, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-28 16:12:58.178 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.178 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.179 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 6, 'Charlie': 2, 'Diana': 4, 'Bob': 2}
+2025-01-28 16:12:58.180 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Diana'}
+2025-01-28 16:12:58.181 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.181 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 5, 'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Bob': 2}
+2025-01-28 16:12:58.182 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Eve'}
+2025-01-28 16:12:58.183 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.183 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Bob': 2}
+2025-01-28 16:12:58.185 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Charlie'}
+2025-01-28 16:12:58.186 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.186 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 2}
+2025-01-28 16:12:58.188 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Bob'}
+2025-01-28 16:12:58.190 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.191 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Bob': 3}
+2025-01-28 16:12:58.192 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Alice'}
+2025-01-28 16:12:58.193 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.194 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 5, 'Bob': 3}
+2025-01-28 16:12:58.196 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:58.197 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.197 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 6, 'Bob': 3}
+2025-01-28 16:12:58.199 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Diana'}
+2025-01-28 16:12:58.199 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.200 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 7, 'Bob': 3}
+2025-01-28 16:12:58.201 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:58.201 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.202 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 7, 'Bob': 4}
+2025-01-28 16:12:58.204 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.205 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.206 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 8, 'Bob': 4}
+2025-01-28 16:12:58.208 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.209 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.209 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 7, 'Charlie': 3, 'Diana': 9, 'Bob': 4}
+2025-01-28 16:12:58.210 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.211 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.212 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 3, 'Diana': 9, 'Bob': 4}
+2025-01-28 16:12:58.213 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:12:58.214 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.214 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 9, 'Bob': 4}
+2025-01-28 16:12:58.215 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.216 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.216 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 10, 'Bob': 4}
+2025-01-28 16:12:58.217 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:58.218 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.218 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 10, 'Bob': 5}
+2025-01-28 16:12:58.220 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.221 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.222 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 8, 'Charlie': 4, 'Diana': 11, 'Bob': 5}
+2025-01-28 16:12:58.226 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.226 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.226 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 9, 'Charlie': 4, 'Diana': 11, 'Bob': 5}
+2025-01-28 16:12:58.227 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:58.228 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.228 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 4, 'Diana': 11, 'Bob': 5}
+2025-01-28 16:12:58.230 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:12:58.230 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.231 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 11, 'Bob': 5}
+2025-01-28 16:12:58.232 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:12:58.233 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.233 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 11, 'Bob': 6}
+2025-01-28 16:12:58.235 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:58.236 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.236 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 12, 'Bob': 6}
+2025-01-28 16:12:58.238 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:12:58.239 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.240 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 10, 'Charlie': 5, 'Diana': 13, 'Bob': 6}
+2025-01-28 16:12:58.242 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:12:58.243 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.243 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 11, 'Charlie': 5, 'Diana': 13, 'Bob': 6}
+2025-01-28 16:12:58.243 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:12:58.244 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.244 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 11, 'Charlie': 6, 'Diana': 13, 'Bob': 6}
+2025-01-28 16:12:58.245 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.246 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.246 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 12, 'Charlie': 6, 'Diana': 13, 'Bob': 6}
+2025-01-28 16:12:58.249 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Diana'}
+2025-01-28 16:12:58.249 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.250 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 12, 'Charlie': 6, 'Diana': 14, 'Bob': 6}
+2025-01-28 16:12:58.251 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:12:58.251 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.251 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Bob': 6}
+2025-01-28 16:12:58.253 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:58.253 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.253 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Bob': 7}
+2025-01-28 16:12:58.255 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:58.256 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.257 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Bob': 8}
+2025-01-28 16:12:58.258 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:58.259 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.259 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 8}
+2025-01-28 16:12:58.260 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:58.261 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.262 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 6, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 9}
+2025-01-28 16:12:58.264 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Eve'}
+2025-01-28 16:12:58.265 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.266 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 7, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 9}
+2025-01-28 16:12:58.266 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.267 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Bob'}
+2025-01-28 16:12:58.268 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.268 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 7, 'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.271 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Alice'}
+2025-01-28 16:12:58.271 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.272 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 7, 'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.275 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:58.275 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.276 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 8, 'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.277 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:58.277 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.278 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.280 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are amazing!!', 'author': 'Alice'}
+2025-01-28 16:12:58.281 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.281 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 15, 'Charlie': 6, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.282 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Charlie'}
+2025-01-28 16:12:58.283 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.283 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 15, 'Charlie': 7, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.284 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Alice'}
+2025-01-28 16:12:58.285 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.285 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 16, 'Charlie': 7, 'Diana': 15, 'Bob': 10}
+2025-01-28 16:12:58.287 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:12:58.288 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.289 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 16, 'Charlie': 7, 'Diana': 16, 'Bob': 10}
+2025-01-28 16:12:58.291 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are fat which is great.', 'author': 'Alice'}
+2025-01-28 16:12:58.292 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.292 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 17, 'Charlie': 7, 'Diana': 16, 'Bob': 10}
+2025-01-28 16:12:58.293 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.294 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.294 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 9, 'Alice': 17, 'Charlie': 7, 'Diana': 17, 'Bob': 10}
+2025-01-28 16:12:58.296 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:12:58.297 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.298 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 10, 'Alice': 17, 'Charlie': 7, 'Diana': 17, 'Bob': 10}
+2025-01-28 16:12:58.298 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs sometimes eat their poop, easy clean up.', 'author': 'Eve'}
+2025-01-28 16:12:58.299 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.299 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 17, 'Charlie': 7, 'Diana': 17, 'Bob': 10}
+2025-01-28 16:12:58.300 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:58.301 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.301 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 18, 'Charlie': 7, 'Diana': 17, 'Bob': 10}
+2025-01-28 16:12:58.303 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.304 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.304 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 18, 'Charlie': 7, 'Diana': 18, 'Bob': 10}
+2025-01-28 16:12:58.308 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:58.308 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.309 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 18, 'Charlie': 7, 'Diana': 19, 'Bob': 10}
+2025-01-28 16:12:58.309 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:12:58.310 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.310 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 18, 'Charlie': 8, 'Diana': 19, 'Bob': 10}
+2025-01-28 16:12:58.311 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:12:58.312 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.312 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 18, 'Charlie': 8, 'Diana': 19, 'Bob': 11}
+2025-01-28 16:12:58.313 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:12:58.314 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.314 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 11, 'Alice': 18, 'Charlie': 8, 'Diana': 19, 'Bob': 12}
+2025-01-28 16:12:58.315 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:12:58.315 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.316 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 12, 'Alice': 18, 'Charlie': 8, 'Diana': 19, 'Bob': 12}
+2025-01-28 16:12:58.317 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:12:58.318 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.318 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 18, 'Charlie': 8, 'Diana': 19, 'Bob': 12}
+2025-01-28 16:12:58.319 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:58.319 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.320 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 19, 'Charlie': 8, 'Diana': 19, 'Bob': 12}
+2025-01-28 16:12:58.322 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.323 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.324 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 20, 'Charlie': 8, 'Diana': 19, 'Bob': 12}
+2025-01-28 16:12:58.325 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Diana'}
+2025-01-28 16:12:58.326 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.326 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 13, 'Alice': 20, 'Charlie': 8, 'Diana': 20, 'Bob': 12}
+2025-01-28 16:12:58.329 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Eve'}
+2025-01-28 16:12:58.329 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:12:58.330 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 20, 'Charlie': 8, 'Diana': 20, 'Bob': 12}
+2025-01-28 16:12:58.331 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Charlie'}
+2025-01-28 16:12:58.332 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.332 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 20, 'Charlie': 9, 'Diana': 20, 'Bob': 12}
+2025-01-28 16:12:58.333 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Bob'}
+2025-01-28 16:12:58.333 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.334 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 20, 'Charlie': 9, 'Diana': 20, 'Bob': 13}
+2025-01-28 16:12:58.334 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Alice'}
+2025-01-28 16:12:58.335 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.335 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 9, 'Diana': 20, 'Bob': 13}
+2025-01-28 16:12:58.336 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:12:58.337 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.338 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 9, 'Diana': 21, 'Bob': 13}
+2025-01-28 16:12:58.341 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Diana'}
+2025-01-28 16:12:58.342 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.342 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 9, 'Diana': 22, 'Bob': 13}
+2025-01-28 16:12:58.343 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:58.343 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.344 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 9, 'Diana': 22, 'Bob': 14}
+2025-01-28 16:12:58.345 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.345 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.346 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 9, 'Diana': 23, 'Bob': 14}
+2025-01-28 16:12:58.347 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.347 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.348 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 21, 'Charlie': 9, 'Diana': 24, 'Bob': 14}
+2025-01-28 16:12:58.350 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.350 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.350 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 9, 'Diana': 24, 'Bob': 14}
+2025-01-28 16:12:58.351 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:12:58.352 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:12:58.352 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 10, 'Diana': 24, 'Bob': 14}
+2025-01-28 16:12:58.353 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.354 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.355 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 10, 'Diana': 25, 'Bob': 14}
+2025-01-28 16:12:58.357 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Bob'}
+2025-01-28 16:12:58.358 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:12:58.359 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 10, 'Diana': 25, 'Bob': 15}
+2025-01-28 16:12:58.360 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:12:58.360 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:12:58.360 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 22, 'Charlie': 10, 'Diana': 26, 'Bob': 15}
+2025-01-28 16:12:58.366 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:12:58.366 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:58.367 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 23, 'Charlie': 10, 'Diana': 26, 'Bob': 15}
+2025-01-28 16:12:59.268 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:59.276 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:12:59.276 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:12:59.277 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 24, 'Charlie': 10, 'Diana': 26, 'Bob': 15}
+2025-01-28 16:13:00.271 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:13:00.278 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats already rule the world.', 'author': 'Charlie'}
+2025-01-28 16:13:00.279 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:13:00.280 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 24, 'Charlie': 11, 'Diana': 26, 'Bob': 15}
+2025-01-28 16:13:01.275 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:13:01.283 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Bob'}
+2025-01-28 16:13:01.283 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:13:01.284 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 24, 'Charlie': 11, 'Diana': 26, 'Bob': 16}
+2025-01-28 16:13:02.278 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:13:02.285 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:13:02.286 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:13:02.287 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 24, 'Charlie': 11, 'Diana': 27, 'Bob': 16}
+2025-01-28 16:13:03.280 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:13:03.288 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:13:03.288 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:13:03.289 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 24, 'Charlie': 11, 'Diana': 28, 'Bob': 16}
+2025-01-28 16:13:04.283 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:13:04.291 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:13:04.292 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:13:04.292 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 25, 'Charlie': 11, 'Diana': 28, 'Bob': 16}
+2025-01-28 16:13:05.286 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:13:05.293 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:13:05.293 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-01-28 16:13:05.294 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 25, 'Charlie': 12, 'Diana': 28, 'Bob': 16}
+2025-01-28 16:13:06.290 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:13:06.302 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Alice'}
+2025-01-28 16:13:06.303 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:13:06.304 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 26, 'Charlie': 12, 'Diana': 28, 'Bob': 16}
+2025-01-28 16:13:07.294 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Diana'}
+2025-01-28 16:13:07.301 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Diana'}
+2025-01-28 16:13:07.301 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:13:07.302 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 26, 'Charlie': 12, 'Diana': 29, 'Bob': 16}
+2025-01-28 16:13:08.297 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:13:08.306 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Alice'}
+2025-01-28 16:13:08.307 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:13:08.308 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 27, 'Charlie': 12, 'Diana': 29, 'Bob': 16}
+2025-01-28 16:13:09.301 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:13:09.315 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:13:09.316 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:13:09.317 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 27, 'Charlie': 12, 'Diana': 29, 'Bob': 17}
+2025-01-28 16:13:10.303 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:13:10.314 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:13:10.315 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:13:10.316 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 27, 'Charlie': 12, 'Diana': 29, 'Bob': 18}
+2025-01-28 16:13:11.307 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:13:11.322 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:13:11.324 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-01-28 16:13:11.327 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 27, 'Charlie': 12, 'Diana': 30, 'Bob': 18}
+2025-01-28 16:13:12.310 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:13:12.320 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
+2025-01-28 16:13:12.321 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:13:12.321 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 14, 'Alice': 27, 'Charlie': 12, 'Diana': 30, 'Bob': 19}
+2025-01-28 16:13:13.314 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Eve'}
+2025-01-28 16:13:13.323 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Eve'}
+2025-01-28 16:13:13.324 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:13:13.325 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 15, 'Alice': 27, 'Charlie': 12, 'Diana': 30, 'Bob': 19}
+2025-01-28 16:13:14.317 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Bob'}
+2025-01-28 16:13:14.327 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Cats poop in a box!', 'author': 'Bob'}
+2025-01-28 16:13:14.328 | INFO     | __main__:process_message:95 - Message received from author: Bob
+2025-01-28 16:13:14.329 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 15, 'Alice': 27, 'Charlie': 12, 'Diana': 30, 'Bob': 20}
+2025-01-28 16:13:15.327 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Alice'}
+2025-01-28 16:13:15.335 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs should rule the world!', 'author': 'Alice'}
+2025-01-28 16:13:15.337 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-01-28 16:13:15.338 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 15, 'Alice': 28, 'Charlie': 12, 'Diana': 30, 'Bob': 20}
+2025-01-28 16:13:16.329 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:13:16.339 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:13:16.340 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:13:16.341 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 16, 'Alice': 28, 'Charlie': 12, 'Diana': 30, 'Bob': 20}
+2025-01-28 16:13:17.331 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:13:17.332 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\ctrog\Documents\Data Analytics Masters\Streaming\buzzline-03-rogers\data\debate.json
+2025-01-28 16:13:17.346 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:13:17.347 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-01-28 16:13:17.348 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 17, 'Alice': 28, 'Charlie': 12, 'Diana': 30, 'Bob': 20}
+2025-01-28 16:13:17.335 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Eve'}
+2025-01-28 16:13:18.363 | WARNING  | __main__:main:142 - Consumer interrupted by user.
+2025-01-28 16:13:18.370 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are amazing!!', 'author': 'Alice'}
+2025-01-28 16:13:18.411 | INFO     | __main__:main:147 - Kafka consumer for topic 'buzzline_json' closed.
+2025-01-28 16:13:18.414 | INFO     | __main__:main:149 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-01-28 16:13:19.379 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs should rule the world!', 'author': 'Charlie'}
+2025-01-28 16:13:20.383 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats already rule the world.', 'author': 'Alice'}
+2025-01-28 16:13:21.387 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are cute.', 'author': 'Diana'}
+2025-01-28 16:13:22.392 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are fat which is great.', 'author': 'Alice'}
+2025-01-28 16:13:23.395 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:13:24.404 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Eve'}
+2025-01-28 16:13:25.408 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs sometimes eat their poop, easy clean up.', 'author': 'Eve'}
+2025-01-28 16:13:26.412 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Alice'}
+2025-01-28 16:13:27.418 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Diana'}
+2025-01-28 16:13:28.421 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats poop in a box!', 'author': 'Diana'}
+2025-01-28 16:13:29.424 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Cats are fatter, which makes them better.', 'author': 'Charlie'}
+2025-01-28 16:13:30.426 | INFO     | __main__:main:171 - Sent message to topic 'buzzline_json': {'message': 'Dogs are the greatest animal to walk the earth.', 'author': 'Bob'}
