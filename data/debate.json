@@ -1,214 +1,266 @@
 [
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Dog"
     },
     {
         "message": "Cats are amazing!!",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Cat"
     },
     {
         "message": "Dogs should rule the world!",
-        "author": "Charlie"
+        "author": "Charlie",
+        "animal": "Dog"
     },
     {
         "message": "Cats already rule the world.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are cute.",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Dog"
     },
     {
         "message": "Dogs are fat which is great.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Dog"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Cat"
     },
     {
         "message": "Dogs sometimes eat their poop, easy clean up.",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Dog"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Cat"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Charlie"
+        "author": "Charlie",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Dog"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Cat"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Dog"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Dog"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Dog"
     },
     {
         "message": "Cats already rule the world.",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are cute.",
-        "author": "Charlie"
+        "author": "Charlie",
+        "animal": "Dog"
     },
     {
         "message": "Cats already rule the world.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are cute.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Dog"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Cats already rule the world.",
-        "author": "Diana"
-    },
-    {
-        "message": "Dogs are cute.",
-        "author": "Bob"
-    },
-    {
-        "message": "Cats are fatter, which makes them better.",
-        "author": "Diana"
-    },
-    {
-        "message": "Cats are fatter, which makes them better.",
-        "author": "Diana"
-    },
-    {
-        "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Alice"
-    },
-    {
-        "message": "Cats already rule the world.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Cats are fatter, which makes them better.",
         "author": "Diana"
     },
     {
         "message": "Dogs are cute.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Dog"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
+    },
+    {
+        "message": "Cats are fatter, which makes them better.",
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Alice"
-    },
-    {
-        "message": "Cats are fatter, which makes them better.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Dog"
     },
     {
         "message": "Cats already rule the world.",
-        "author": "Charlie"
+        "author": "Charlie",
+        "animal": "Cat"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Bob"
-    },
-    {
-        "message": "Cats poop in a box!",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are cute.",
-        "author": "Diana"
-    },
-    {
-        "message": "Cats poop in a box!",
-        "author": "Alice"
+        "author": "Bob",
+        "animal": "Dog"
     },
     {
         "message": "Cats are fatter, which makes them better.",
-        "author": "Charlie"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Dog"
+    },
+    {
+        "message": "Cats are fatter, which makes them better.",
+        "author": "Alice",
+        "animal": "Cat"
+    },
+    {
+        "message": "Cats already rule the world.",
+        "author": "Charlie",
+        "animal": "Cat"
+    },
+    {
+        "message": "Cats are fatter, which makes them better.",
+        "author": "Bob",
+        "animal": "Cat"
+    },
+    {
+        "message": "Cats poop in a box!",
+        "author": "Diana",
+        "animal": "Cat"
+    },
+    {
+        "message": "Dogs are cute.",
+        "author": "Diana",
+        "animal": "Dog"
+    },
+    {
+        "message": "Cats poop in a box!",
+        "author": "Alice",
+        "animal": "Cat"
+    },
+    {
+        "message": "Cats are fatter, which makes them better.",
+        "author": "Charlie",
+        "animal": "Cat"
+    },
+    {
+        "message": "Dogs are the greatest animal to walk the earth.",
+        "author": "Alice",
+        "animal": "Dog"
     },
     {
         "message": "Dogs should rule the world!",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Dog"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Dog"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Dog"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Diana"
+        "author": "Diana",
+        "animal": "Cat"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Dog"
     },
     {
         "message": "Dogs should rule the world!",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Dog"
     },
     {
         "message": "Cats poop in a box!",
-        "author": "Bob"
+        "author": "Bob",
+        "animal": "Cat"
     },
     {
         "message": "Dogs should rule the world!",
-        "author": "Alice"
+        "author": "Alice",
+        "animal": "Dog"
     },
     {
         "message": "Dogs are the greatest animal to walk the earth.",
-        "author": "Eve"
+        "author": "Eve",
+        "animal": "Dog"
     }
 ]

@@ -1,5 +1,5 @@
 """
-json_consumer_case.py
+json_consumer_rogers.py
 
 Consume json messages from a Kafka topic and process them.
 
@@ -63,7 +63,7 @@ def get_kafka_consumer_group_id() -> int:
 # pass in the int function as the default_factory
 # to ensure counts are integers
 # {author: count} author is the key and count is the value
-author_counts = defaultdict(int)
+animal_counts = defaultdict(int)
 
 
 #####################################
@@ -92,13 +92,14 @@ def process_message(message: str) -> None:
         if isinstance(message_dict, dict):
             # Extract the 'author' field from the Python dictionary
             author = message_dict.get("author", "unknown")
+            animal = message_dict.get("animal", "unknown")
             logger.info(f"Message received from author: {author}")
 
             # Increment the count for the author
-            author_counts[author] += 1
+            animal_counts[animal] += 1
 
             # Log the updated counts
-            logger.info(f"Updated author counts: {dict(author_counts)}")
+            logger.info(f"Updated animal counts: {dict(animal_counts)}")
         else:
             logger.error(f"Expected a dictionary but got: {type(message_dict)}")
 

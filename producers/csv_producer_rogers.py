@@ -1,5 +1,5 @@
 """
-csv_producer_case.py
+csv_producer_rogers.py
 
 Stream numeric data to a Kafka topic.
 
@@ -70,7 +70,7 @@ DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
 # Set the name of the data file
-DATA_FILE = DATA_FOLDER.joinpath("smoker_temps.csv")
+DATA_FILE = DATA_FOLDER.joinpath("winner.csv")
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
@@ -97,17 +97,17 @@ def generate_messages(file_path: pathlib.Path):
                 csv_reader = csv.DictReader(csv_file)
                 for row in csv_reader:
                     # Ensure required fields are present
-                    if "temperature" not in row:
-                        logger.error(f"Missing 'temperature' column in row: {row}")
+                    if "winner" not in row:
+                        logger.error(f"Missing 'winner' column in row: {row}")
                         continue
 
                     # Generate a timestamp and prepare the message
                     current_timestamp = datetime.utcnow().isoformat()
                     message = {
                         "timestamp": current_timestamp,
-                        "temperature": float(row["temperature"]),
+                        "winner": (row["winner"]),
                     }
-                    logger.debug(f"Generated message: {message}")
+                    logger.debug(f"The winner was: {message}")
                     yield message
         except FileNotFoundError:
             logger.error(f"File not found: {file_path}. Exiting.")

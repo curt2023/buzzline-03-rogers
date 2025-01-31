@@ -20,6 +20,7 @@ import json
 # A deque is a good way to monitor a certain number of "most recent" messages
 # A deque is a great data structure for time windows (e.g. the last 5 messages)
 from collections import deque
+from collections import defaultdict 
 
 # Import external packages
 from dotenv import load_dotenv
@@ -69,6 +70,18 @@ def get_rolling_window_size() -> int:
 
 
 #####################################
+# Set up Data Store to hold author counts
+#####################################
+
+# Initialize a dictionary to store author counts
+# The defaultdict type initializes counts to 0
+# pass in the int function as the default_factory
+# to ensure counts are integers
+# {author: count} author is the key and count is the value
+winner_counts = defaultdict(int)
+
+
+#####################################
 # Define a function to detect a stall
 #####################################
 
@@ -96,10 +109,10 @@ def detect_stall(rolling_window_deque: deque) -> bool:
     # Use Python's built-in min() and max() functions
     # If the range is less than or equal to the threshold, we have a stall
     # And our food is ready :)
-    temp_range = max(rolling_window_deque) - min(rolling_window_deque)
-    is_stalled: bool = temp_range <= get_stall_threshold()
-    logger.debug(f"Temperature range: {temp_range}°F. Stalled: {is_stalled}")
-    return is_stalled
+   # temp_range = max(rolling_window_deque) - min(rolling_window_deque)
+    #is_stalled: bool = temp_range <= get_stall_threshold()
+    #logger.debug(f"Temperature range: {temp_range}°F. Stalled: {is_stalled}")
+    #return is_stalled
 
 
 #####################################
@@ -107,14 +120,14 @@ def detect_stall(rolling_window_deque: deque) -> bool:
 # #####################################
 
 
-def process_message(message: str, rolling_window: deque, window_size: int) -> None:
+def process_message(message: str, rolling_window: deque, window_size: str) -> None:
     """
     Process a JSON-transferred CSV message and check for stalls.
 
     Args:
         message (str): JSON message received from Kafka.
-        rolling_window (deque): Rolling window of temperature readings.
-        window_size (int): Size of the rolling window.
+        rolling_window (deque): Rolling window of winner readings.
+        window_size (str): Size of the rolling window.
     """
     try:
         # Log the raw message for debugging
@@ -122,23 +135,29 @@ def process_message(message: str, rolling_window: deque, window_size: int) -> No
 
         # Parse the JSON string into a Python dictionary
         data: dict = json.loads(message)
-        temperature = data.get("temperature")
+        winner = data.get("winner")
         timestamp = data.get("timestamp")
         logger.info(f"Processed JSON message: {data}")
 
         # Ensure the required fields are present
-        if temperature is None or timestamp is None:
-            logger.error(f"Invalid message format: {message}")
+        if winner is None or timestamp is None:
+            logger.error(f"Invalid message format: {data}")
             return
 
         # Append the temperature reading to the rolling window
-        rolling_window.append(temperature)
+        rolling_window.append(winner)
 
-        # Check for a stall
-        if detect_stall(rolling_window):
-            logger.info(
-                f"STALL DETECTED at {timestamp}: Temp stable at {temperature}°F over last {window_size} readings."
-            )
+        if isinstance(message, dict):
+            # Extract the 'author' field from the Python dictionary
+            winner = data.get("winner", "unknown")
+            logger.info(f"Message received from: {winner}")
+
+            # Increment the count for the author
+
+        winner_counts[winner] += 1
+
+        logger.info(f"Updated author counts: {dict(winner_counts)}")
+
 
     except json.JSONDecodeError as e:
         logger.error(f"JSON decoding error for message '{message}': {e}")
