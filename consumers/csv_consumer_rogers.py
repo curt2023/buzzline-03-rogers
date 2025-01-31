@@ -1,5 +1,5 @@
 """
-csv_consumer_case.py
+csv_consumer_rogers.py
 
 Consume json messages from a Kafka topic and process them.
 
